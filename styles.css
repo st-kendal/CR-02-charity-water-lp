@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  color: #333; /* dark text */
+  color: #fff; /* white text */
 }
 
 .main-heading {
@@ -82,7 +82,6 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: #fff; /* White text on blue */
   font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -90,7 +89,7 @@ body {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.6;
-  color: #e6e6e6; /* lighter white for contrast */
+  color: #e6e6e6; /* lighter white */
   margin-bottom: 3rem;
   max-width: 520px;
   font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -103,11 +102,11 @@ body {
   border-radius: 8px;
   text-align: center;
   max-width: 450px;
+  color: #333;
 }
 
 .donation-box h3 {
   margin-bottom: 1rem;
-  color: #333;
   font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -147,6 +146,9 @@ body {
 .hero-right {
   flex: 1 1 50%;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-image {
@@ -154,6 +156,38 @@ body {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+}
+
+/* Learn More Section below image */
+.learn-more-section {
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+.learn-question {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #fff; /* white for contrast */
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.learn-more-button {
+  background-color: #FFC907; /* brand yellow */
+  color: #2E9DF7; /* brand blue */
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.learn-more-button:hover {
+  background-color: #e6b506;
 }
 
 /* FOOTER */
