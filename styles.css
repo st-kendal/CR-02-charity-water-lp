@@ -81,6 +81,15 @@ body {
   cursor: pointer;
   border-radius: 4px;
   font-size: 1rem;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.donation-buttons button:hover {
+  background-color: #f0f0f0;
+}
+
+.donation-buttons button:active {
+  transform: scale(0.95);
 }
 
 .donation-buttons button:hover {
