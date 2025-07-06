@@ -1,27 +1,23 @@
 body {
   margin: 0;
-  font-family: Montserrat, sans-serif;
-  background-color: #fff7e1; /* Cream background */
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff7e1; /* soft cream fallback */
   color: #333;
 }
 
-/* Reusable cream banner for header & footer */
-.cream-banner {
-  background-color: #fff7e1;
-}
-
-/* HEADER STYLES */
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: white;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 0.6rem; /* space between logo and text */
+  gap: 0.6rem;
 }
 
 .logo-img {
@@ -30,37 +26,33 @@ body {
 }
 
 .logo {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   margin: 0;
-  color: #000;
+  color: #2E9DF7; /* brand blue */
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .header-right {
   display: flex;
-  gap: 2rem; /* Space out nav links */
+  gap: 2rem;
 }
 
 .header-right a {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
-  color: #222;
+  color: #2E9DF7; /* brand blue */
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .header-right a:hover {
-  color: #0077b6;
-  background-color: #e0f0ff;
-  box-shadow: 0 2px 8px rgba(0, 119, 182, 0.3);
-  text-decoration: none;
+  background-color: #8BD1CB; /* light blue */
+  color: #000;
 }
 
 /* HERO SECTION */
@@ -69,7 +61,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #94bfc5; /* Blue hero background */
+  background-color: #2E9DF7; /* brand blue */
   padding: 4rem 2rem;
   gap: 4rem;
 }
@@ -84,28 +76,28 @@ body {
 }
 
 .main-heading {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  color: #fff;
+  color: #333; /* Dark neutral text */
   margin-bottom: 1.5rem;
   line-height: 1.2;
   letter-spacing: 0.04em;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Keep the subheading lighter for contrast */
 .subheading {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #eaeaea;
+  color: #555; /* Dark gray text */
   margin-bottom: 3rem;
   max-width: 520px;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 .hero-right.cta-box {
-  background-color: #0077b6; /* charity water blue */
-  color: #fff;
+  background-color: #FFC907; /* brand yellow */
+  color: #2E9DF7; /* brand blue */
   padding: 2.5rem 2rem;
   border-radius: 12px;
   max-width: 450px;
@@ -113,12 +105,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.3);
+  box-shadow: 0 6px 20px rgba(255, 201, 7, 0.3);
   text-align: center;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .cta-box h3 {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -126,7 +118,6 @@ body {
 }
 
 .cta-box p {
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   font-weight: 400;
@@ -134,26 +125,26 @@ body {
 }
 
 .cta-button {
-  background-color: #ffd166; /* warm yellow */
-  color: #0077b6;
+  background-color: #2E9DF7; /* brand blue */
+  color: #FFC907; /* brand yellow */
   padding: 0.8rem 2rem;
   border-radius: 30px;
   font-weight: 700;
-  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-size: 1.1rem;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(255, 209, 102, 0.5);
+  box-shadow: 0 4px 8px rgba(46, 157, 247, 0.5);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .cta-button:hover {
-  background-color: #f9c846;
-  color: #005f85;
+  background-color: #1968e0; /* slightly darker blue */
+  color: #fff;
 }
 
 /* DONATION BOX */
 .donation-box {
-  background-color: #fff7e1;
+  background-color: #fff7e1; /* cream */
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
@@ -162,6 +153,7 @@ body {
 .donation-box h3 {
   margin-bottom: 1rem;
   color: #333;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .donation-buttons {
@@ -180,6 +172,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .donation-buttons button:hover {
@@ -192,6 +185,7 @@ body {
   color: #000;
   text-decoration: underline;
   font-size: 0.95rem;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* FOOTER */
@@ -200,4 +194,5 @@ body {
   padding: 1rem;
   font-size: 0.9rem;
   color: #555;
+  font-family: 'Avenir', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
