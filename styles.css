@@ -1,16 +1,16 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #fff7e1; /* Light cream background for the whole page */
+  background-color: #fff7e1;
   color: #333;
 }
 
-/* Shared cream-colored sections (header & footer) */
+/* Cream banners for header & footer */
 .cream-banner {
   background-color: #fff7e1;
 }
 
-/* Header with logo & nav links */
+/* Header styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@ body {
 }
 
 .logo img {
-  height: 40px; /* Keeps logo size consistent */
+  height: 40px;
   width: auto;
 }
 
@@ -34,16 +34,17 @@ body {
   font-weight: 500;
 }
 
-/* Hero section with split layout: text left, image right */
+/* Hero section split 50/50 */
 .hero {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  background-color: #94bfc5; /* Charity water's blue-green accent */
+  background-color: #94bfc5;
   padding: 3rem 1.5rem;
   gap: 2rem;
 }
 
+/* Hero text: left half */
 .hero-text {
   flex: 1 1 50%;
   min-width: 280px;
@@ -66,7 +67,6 @@ body {
   line-height: 1.5;
 }
 
-/* Donation buttons section */
 .donation-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -81,15 +81,10 @@ body {
   cursor: pointer;
   border-radius: 4px;
   font-size: 1rem;
-  transition: background-color 0.3s, transform 0.1s;
 }
 
 .donation-buttons button:hover {
   background-color: #f0f0f0;
-}
-
-.donation-buttons button:active {
-  transform: scale(0.95); /* Adds a nice "pressed" animation */
 }
 
 .other-options {
@@ -99,7 +94,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* Hero image styles */
+/* Hero image: right half */
 .hero-image {
   flex: 1 1 50%;
   min-width: 280px;
@@ -116,7 +111,7 @@ body {
   border-radius: 8px;
 }
 
-/* Trust section styles */
+/* Trust section */
 .trust-section {
   background-color: #fff7e1;
   text-align: center;
@@ -135,74 +130,9 @@ body {
   line-height: 1.6;
 }
 
-/* Footer styles */
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
-
-/* ============================
-   Responsive design adjustments
-   ============================ */
-
-/* For screens narrower than 768px (typical tablets & phones) */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column; /* Stack hero elements vertically */
-    padding: 2rem 1rem;
-  }
-
-  .hero-text,
-  .hero-image {
-    flex: 1 1 100%; /* Make text & image full-width */
-    max-width: 100%;
-  }
-
-  .hero-text h1 {
-    font-size: 1.6rem; /* Slightly smaller headline on tablets */
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .donation-buttons button {
-    flex: 1 1 45%; /* Make buttons wrap nicely on smaller screens */
-    min-width: 120px;
-  }
-
-  .logo img {
-    height: 30px; /* Scale down logo */
-  }
-
-  .nav-links {
-    flex-direction: column; /* Stack nav links vertically */
-    gap: 0.5rem;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
-  }
-}
-
-/* For very small screens narrower than 480px (phones) */
-@media (max-width: 480px) {
-  .header,
-  .footer,
-  .trust-section {
-    padding: 1rem; /* Reduce padding for extra small devices */
-  }
-
-  .hero-text h1 {
-    font-size: 1.4rem;
-  }
-
-  .hero-text p {
-    font-size: 0.95rem;
-  }
-
-  .donation-buttons button {
-    flex: 1 1 100%; /* Make buttons stack one per row on very small devices */
-  }
 }
