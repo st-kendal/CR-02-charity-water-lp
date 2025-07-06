@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #fff7e1;
+  font-family: 'Avenir', 'Proxima Nova', sans-serif;
+  background-color: #ffffff; /* White background */
   color: #333;
 }
 
-/* Cream banners for header & footer */
+/* Blue banners for header & footer */
 .cream-banner {
-  background-color: #fff7e1;
+  background-color: #2E9DF7; /* Official charity: water blue */
+  color: #fff;
 }
 
 /* Header styles */
@@ -16,6 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  background-color: #2E9DF7; /* Consistent blue */
 }
 
 .logo img {
@@ -30,7 +32,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
+  color: #fff; /* White text on blue background */
   font-weight: 500;
 }
 
@@ -39,7 +41,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  background-color: #94bfc5;
+  background-color: #2E9DF7; /* Blue hero background */
   padding: 3rem 1.5rem;
   gap: 2rem;
 }
@@ -61,7 +63,7 @@ body {
 }
 
 .hero-text p {
-  color: #f0f0f0;
+  color: #e0e0e0;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.5;
@@ -76,8 +78,9 @@ body {
 
 .donation-buttons button {
   padding: 0.6rem 1.2rem;
-  border: 1px solid #000;
+  border: 1px solid #2E9DF7;
   background-color: #fff;
+  color: #2E9DF7;
   cursor: pointer;
   border-radius: 4px;
   font-size: 1rem;
@@ -85,12 +88,12 @@ body {
 }
 
 .donation-buttons button:hover {
-  background-color: #f0f0f0;
+  background-color: #e6f2fb;
 }
 
 .other-options {
   display: inline-block;
-  color: #000;
+  color: #fff;
   text-decoration: underline;
   font-size: 0.95rem;
 }
@@ -114,7 +117,7 @@ body {
 
 /* Trust section */
 .trust-section {
-  background-color: #fff7e1;
+  background-color: #f7faff; /* very light blue to keep it clean and blue-themed */
   text-align: center;
   padding: 3rem 1.5rem;
 }
@@ -122,6 +125,7 @@ body {
 .trust-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #2E9DF7;
 }
 
 .trust-section p {
@@ -129,10 +133,13 @@ body {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
+  color: #333;
 }
 
 /* Footer */
 .footer {
+  background-color: #2E9DF7;
+  color: #fff;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
