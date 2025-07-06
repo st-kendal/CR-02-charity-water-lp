@@ -18,10 +18,23 @@ body {
   padding: 1rem 2rem;
 }
 
-.header-left .logo {
-  font-weight: bold;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* space between logo and text */
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
   margin: 0;
-  font-size: 1.5rem;
+  color: #000;
 }
 
 .header-right {
@@ -30,65 +43,113 @@ body {
 }
 
 .header-right a {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  transition: color 0.3s;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .header-right a:hover {
-  color: #555;
+  color: #0077b6;
+  background-color: #e0f0ff;
+  box-shadow: 0 2px 8px rgba(0, 119, 182, 0.3);
+  text-decoration: none;
 }
 
 /* HERO SECTION */
 .hero-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #94bfc5; /* Blue hero background */
   padding: 4rem 2rem;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .hero-left {
-  flex: 1;
-  min-width: 320px; /* a bit wider for better readability */
-  max-width: 500px;
+  flex: 1 1 450px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left; /* aligns text left */
-}
-
-.hero-right img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
+  text-align: left;
 }
 
 .main-heading {
-  font-size: 2.25rem; /* slightly bigger */
-  margin-bottom: 1rem;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
   color: #fff;
-  text-align: left;
-  font-weight: 700; /* bolder for modern style */
+  margin-bottom: 1.5rem;
   line-height: 1.2;
-  letter-spacing: 0.03em; /* subtle letter spacing */
-  font-family: 'Poppins', 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
 }
 
-.subheadingsubheading {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #eaeaea; /* lighter, softer white */
-  margin-bottom: 2.5rem;
-  text-align: left;
+.subheading {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 400;
-  font-family: 'Poppins', 'Montserrat', sans-serif;
-  max-width: 450px; /* limits line length for easier reading */
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin-bottom: 3rem;
+  max-width: 520px;
 }
 
+.hero-right.cta-box {
+  background-color: #0077b6; /* charity water blue */
+  color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.3);
+  text-align: center;
+}
+
+.cta-box h3 {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.cta-box p {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background-color: #ffd166; /* warm yellow */
+  color: #0077b6;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(255, 209, 102, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f9c846;
+  color: #005f85;
+}
 
 /* DONATION BOX */
 .donation-box {
