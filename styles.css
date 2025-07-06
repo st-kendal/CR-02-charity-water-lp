@@ -53,8 +53,12 @@ body {
 
 .hero-left {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px; /* a bit wider for better readability */
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* aligns text left */
 }
 
 .hero-right img {
@@ -64,17 +68,27 @@ body {
 }
 
 .main-heading {
-  font-size: 2rem;
+  font-size: 2.25rem; /* slightly bigger */
   margin-bottom: 1rem;
   color: #fff;
+  text-align: left;
+  font-weight: 700; /* bolder for modern style */
+  line-height: 1.2;
+  letter-spacing: 0.03em; /* subtle letter spacing */
+  font-family: 'Poppins', 'Montserrat', sans-serif;
 }
 
-.subheading {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #f0f0f0;
-  margin-bottom: 2rem;
+.subheadingsubheading {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #eaeaea; /* lighter, softer white */
+  margin-bottom: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  max-width: 450px; /* limits line length for easier reading */
 }
+
 
 /* DONATION BOX */
 .donation-box {
